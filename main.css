@@ -25,10 +25,13 @@ body {
 #query {
 	width: 50%;
 	font-size: 30px;
-	appearance: none;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
 	box-shadow: none;
 	padding: 10px;
 	border: solid 5px #7DB4B5;
+	-webkit-transition: border 1s;
 	transition: border 1s;
 	border-radius: none;
 	margin-right: 20px;
@@ -52,13 +55,18 @@ body {
 	height: 50px;
 	width: 50px;
 	border: none;
+	-webkit-transition: -webkit-transform 0.09s;
+	transition: -webkit-transform 0.09s;
 	transition: transform 0.09s;
-	transition-timing-function: cubic-bezier(.27, -0.3, .87, 1);
+	transition: transform 0.09s, -webkit-transform 0.09s;
+	-webkit-transition-timing-function: cubic-bezier(.27, -0.3, .87, 1);
+	        transition-timing-function: cubic-bezier(.27, -0.3, .87, 1);
 	outline: none;
 }
 
 #searchSubmit:active {
-	transform: scale(0.85);
+	-webkit-transform: scale(0.85);
+	        transform: scale(0.85);
 }
 
 
@@ -82,9 +90,14 @@ body {
 /*** Results wrapper div ***/
 
 #resultsWrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	width: 90%;
 	margin: 0 auto;
 }
@@ -94,7 +107,9 @@ body {
 
 .resultEntry {
 	text-align: left;
-	flex: 0 1 45%;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 1 45%;
+	        flex: 0 1 45%;
 	background-color: white;
 	box-shadow: 0 10px 6px -6px #7DB4B5;
 	padding: 15px;
@@ -189,7 +204,9 @@ body {
 
 .storeEntry {
 	text-align: left;
-	flex: 0 1 45%;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 1 45%;
+	        flex: 0 1 45%;
 	background-color: white;
 	box-shadow: 0 10px 6px -6px #7DB4B5;
 	padding: 15px;
@@ -220,20 +237,28 @@ body {
 /**** Card Hover Animation ****/
 
 .resultEntry, .storeEntry, #prodNameStoreList, #locationWrapper {
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: -webkit-transform 0.5s;
 	transition: transform 0.5s;
-	transition-timing-function: cubic-bezier(.04, .82, .78, 1.64);
+	transition: transform 0.5s, -webkit-transform 0.5s;
+	-webkit-transition-timing-function: cubic-bezier(.04, .82, .78, 1.64);
+	        transition-timing-function: cubic-bezier(.04, .82, .78, 1.64);
 }
 
 .resultEntry:hover, .storeEntry:hover, #prodNameStoreList:hover, #locationWrapper:hover {
-	transform: scale( 1.05, 1.05);
+	-webkit-transform: scale( 1.05, 1.05);
+	        transform: scale( 1.05, 1.05);
 }
 
 
 /**** Pager Links ****/
 
 #pageLinks {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	margin: 50px 0;
 }
 
@@ -249,10 +274,14 @@ body {
 
 @media (max-width: 900px) {
 	.resultEntry, .storeEntry {
-		flex: 0 1 100%;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 1 100%;
+		        flex: 0 1 100%;
 	}
 	#resultsWrapper {
-		justify-content: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 		width: 70%;
 	}
 	#query {
