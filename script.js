@@ -1,5 +1,5 @@
 //**** Application to search LCBO product database and display basic information about returned results
-
+//**** This is a test to see if things change when I switch branches
 //Global Variables 
 var $searchUrl;
 var $nextProdPageUrl;
