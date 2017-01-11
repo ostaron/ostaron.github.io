@@ -129,14 +129,21 @@ lcboapp.products = {
 			lcboapp.nextProdPageUrl = $pager.next_page_path;
 			lcboapp.prevProdPageUrl = $pager.previous_page_path;
 		} //END $callBack
+		
+		function $callbackError(err){
+			$('#resultsWrapper').append("<h3>Something went wrong! Error code: " + err + ".");
+			console.log(err);
+			
+		}
+		
 		//AJAX GET request 
 		$( function() {
 			$.ajax( {
-				url: 'https://lcboapi.com' + url, 
+				url: 'https://lcboapi.com' + url + "removeme", 
 				dataType: 'json',
 				method: 'get',
 				xmlToJSON: false
-				}).then( $callBack );
+				}).then( $callBack ).catch($callbackError);
 			} ); // END AJAX Request
 
 		//TESTING TESTING ONE TWO THREE
