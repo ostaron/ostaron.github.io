@@ -137,7 +137,7 @@ lcboapp.products = {
 				method: 'get',
 				xmlToJSON: false
 				}).then( $callBack ).catch(function(e){
-					console.log(e.statusText);
+					console.log(e);
 					$('#resultsWrapper').append("<div><h3>Something went wrong! Error code: " + e.statusText + ".</h3></div>")
 				});
 			} ); // END AJAX Request
