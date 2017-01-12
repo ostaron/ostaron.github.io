@@ -166,7 +166,7 @@ lcboapp.products = {
 				clearResults();
 			}
 			else {
-				$searchUrl = "/products?access_key=o3MmM2MDczOC05ZmFhLTExZTYtOWExYS1kYjhlYzc1N2RmMmE6Y0J3VUM1eDlhWFFwUVNWMDdFUUQ4YmdxV2pNOUJFMUpOOUEw&per_page=10&q=" + searchQuery + "&xmlToJSON=false";
+				$searchUrl = "/products?access_key=MDo3MmM2MDczOC05ZmFhLTExZTYtOWExYS1kYjhlYzc1N2RmMmE6Y0J3VUM1eDlhWFFwUVNWMDdFUUQ4YmdxV2pNOUJFMUpOOUEw&per_page=10&q=" + searchQuery + "&xmlToJSON=false";
 				lcboapp.products.resultsGet($searchUrl);
 			}
 		});
