@@ -57,6 +57,7 @@ lcboapp.products = {
 		lcboapp.clearResults();
 		//Declare callback function, to process & display results
 		function $callBack(data) {
+			console.log(data);
 			//Store results in variable
 			$results = data.result;
 			lcboapp.currentProdPage = data.pager.current_page_path;
@@ -137,10 +138,10 @@ lcboapp.products = {
 					method: 'get',
 					xmlToJSON: false
 				}).then($callBack)
-				.catch(function(e) {
-					console.log(e);
-					$('#resultsWrapper').append("<div><h3>Something went wrong! Error code: " + e.statusText + ".</h3></div>")
-				});
+				// .catch(function(e) {
+				// 	console.log(e);
+				// 	$('#resultsWrapper').append("<div><h3>Something went wrong! Error code: " + e.statusText + ".</h3></div>")
+				// });
 		}); // END AJAX Request
 
 		//TESTING TESTING ONE TWO THREE
@@ -272,7 +273,12 @@ lcboapp.init = () => {
 	lcboapp.userLocationTool();
 	lcboapp.products.eventListeners();
 	lcboapp.stores.eventListeners();
-
+	$(document).ajaxError(function(event, jqxhr, settings, thrownError) {
+		console.log(event);
+		console.log(jqxhr);
+		console.log(settings);
+		console.log(thrownError);
+	});
 };
 
 lcboapp.init();
