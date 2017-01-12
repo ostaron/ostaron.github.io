@@ -129,13 +129,6 @@ lcboapp.products = {
 			lcboapp.nextProdPageUrl = $pager.next_page_path;
 			lcboapp.prevProdPageUrl = $pager.previous_page_path;
 		} //END $callBack
-		
-		function $callbackError(err){
-			$('#resultsWrapper').append("<h3>Something went wrong! Error code: " + err + ".");
-			console.log(err);
-			
-		}
-		
 		//AJAX GET request 
 		$( function() {
 			$.ajax( {
@@ -143,7 +136,10 @@ lcboapp.products = {
 				dataType: 'json',
 				method: 'get',
 				xmlToJSON: false
-				}).then( $callBack ).catch($callbackError);
+				}).then( $callBack ).catch(function(e){
+					console.log(e.statusText);
+					$('#resultsWrapper').append("<div><h3>Something went wrong! Error code: " + e.statusText + ".</h3></div>")
+				});
 			} ); // END AJAX Request
 
 		//TESTING TESTING ONE TWO THREE
