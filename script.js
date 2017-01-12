@@ -51,6 +51,10 @@ lcboapp.userLocationTool = () => {
 	});
 };
 
+lcboapp.error = function(jxXHR, textStatus, errorThrown) {
+	$('#resultsWrapper').append("<div><h3>Something went wrong! Error code: " + textStatus + ".</h3></div>");
+};
+
 //***** GET PRODUCT RESULTS FUNCTION ******//
 lcboapp.products = {
 	resultsGet: function(url) {
@@ -58,7 +62,6 @@ lcboapp.products = {
 		//Declare callback function, to process & display results
 		function $callBack(data) {
 			console.log(data);
-			//Store results in variable
 			$results = data.result;
 			lcboapp.currentProdPage = data.pager.current_page_path;
 			//If no results, display suggestion from LCBO
@@ -133,18 +136,14 @@ lcboapp.products = {
 		//AJAX GET request 
 		$(function() {
 			$.ajax({
-					url: 'https://lcboapi.com' + url,
-					dataType: 'json',
-					method: 'get',
-					xmlToJSON: false
-				}).then($callBack)
-				// .catch(function(e) {
-				// 	console.log(e);
-				// 	$('#resultsWrapper').append("<div><h3>Something went wrong! Error code: " + e.statusText + ".</h3></div>")
-				// });
+				url: 'https://lcboapi.com' + url,
+				dataType: 'json',
+				method: 'get',
+				xmlToJSON: false,
+				error: lcboapp.error
+			}).then($callBack);
 		}); // END AJAX Request
-
-		//TESTING TESTING ONE TWO THREE
+		// For testing on c9.io
 		// $callBack(productPage);
 	}, //END resultsGet method
 
@@ -167,7 +166,7 @@ lcboapp.products = {
 				clearResults();
 			}
 			else {
-				$searchUrl = "/products?access_key=REEEMOOOOVEMEEEEEMDo3MmM2MDczOC05ZmFhLTExZTYtOWExYS1kYjhlYzc1N2RmMmE6Y0J3VUM1eDlhWFFwUVNWMDdFUUQ4YmdxV2pNOUJFMUpOOUEw&per_page=10&q=" + searchQuery + "&xmlToJSON=false";
+				$searchUrl = "/products?access_key=o3MmM2MDczOC05ZmFhLTExZTYtOWExYS1kYjhlYzc1N2RmMmE6Y0J3VUM1eDlhWFFwUVNWMDdFUUQ4YmdxV2pNOUJFMUpOOUEw&per_page=10&q=" + searchQuery + "&xmlToJSON=false";
 				lcboapp.products.resultsGet($searchUrl);
 			}
 		});
@@ -239,10 +238,12 @@ lcboapp.stores = {
 				url: 'https://lcboapi.com/stores?access_key=MDo3MmM2MDczOC05ZmFhLTExZTYtOWExYS1kYjhlYzc1N2RmMmE6Y0J3VUM1eDlhWFFwUVNWMDdFUUQ4YmdxV2pNOUJFMUpOOUEw&geo=' + lcboapp.userLocation + '&product_id=' + id,
 				dataType: 'json',
 				method: 'get',
-				xmlToJSON: false
+				xmlToJSON: false,
+				error: lcboapp.error
 			}).then($callBack);
 		}); // END AJAX Request
 
+		// For testing on c9.io
 		// $callBack(storePage);
 
 	}, //END storesGet function
@@ -273,12 +274,6 @@ lcboapp.init = () => {
 	lcboapp.userLocationTool();
 	lcboapp.products.eventListeners();
 	lcboapp.stores.eventListeners();
-	$(document).ajaxError(function(event, jqxhr, settings, thrownError) {
-		console.log(event);
-		console.log(jqxhr);
-		console.log(settings);
-		console.log(thrownError);
-	});
 };
 
 lcboapp.init();
