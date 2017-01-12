@@ -130,17 +130,18 @@ lcboapp.products = {
 			lcboapp.prevProdPageUrl = $pager.previous_page_path;
 		} //END $callBack
 		//AJAX GET request 
-		$( function() {
-			$.ajax( {
-				url: 'https://lcboapi.com' + url, 
-				dataType: 'json',
-				method: 'get',
-				xmlToJSON: false
-				}).then( $callBack ).catch(function(e){
+		$(function() {
+			$.ajax({
+					url: 'https://lcboapi.com' + url,
+					dataType: 'json',
+					method: 'get',
+					xmlToJSON: false
+				}).then($callBack)
+				.catch(function(e) {
 					console.log(e);
 					$('#resultsWrapper').append("<div><h3>Something went wrong! Error code: " + e.statusText + ".</h3></div>")
 				});
-			} ); // END AJAX Request
+		}); // END AJAX Request
 
 		//TESTING TESTING ONE TWO THREE
 		// $callBack(productPage);
@@ -232,14 +233,14 @@ lcboapp.stores = {
 			lcboapp.prevStorePageUrl = $pager.previous_page_path;
 		} //END $callBack
 		//AJAX GET request 
-		$( function() {
-			$.ajax( {
-				url: 'https://lcboapi.com/stores?access_key=MDo3MmM2MDczOC05ZmFhLTExZTYtOWExYS1kYjhlYzc1N2RmMmE6Y0J3VUM1eDlhWFFwUVNWMDdFUUQ4YmdxV2pNOUJFMUpOOUEw&geo=' + lcboapp.userLocation + '&product_id=' + id, 
+		$(function() {
+			$.ajax({
+				url: 'https://lcboapi.com/stores?access_key=MDo3MmM2MDczOC05ZmFhLTExZTYtOWExYS1kYjhlYzc1N2RmMmE6Y0J3VUM1eDlhWFFwUVNWMDdFUUQ4YmdxV2pNOUJFMUpOOUEw&geo=' + lcboapp.userLocation + '&product_id=' + id,
 				dataType: 'json',
 				method: 'get',
 				xmlToJSON: false
-				}).then( $callBack );
-			} ); // END AJAX Request
+			}).then($callBack);
+		}); // END AJAX Request
 
 		// $callBack(storePage);
 
@@ -266,10 +267,12 @@ lcboapp.stores = {
 };
 
 
+
 lcboapp.init = () => {
 	lcboapp.userLocationTool();
 	lcboapp.products.eventListeners();
 	lcboapp.stores.eventListeners();
+
 };
 
 lcboapp.init();
