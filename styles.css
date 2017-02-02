@@ -46,7 +46,7 @@ header,
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
-    transition: .5s ease-in-out;
+    transition: letter-spacing.5s ease-in-out;
     border-bottom: solid 4px #F7D9C8;
 }
 
