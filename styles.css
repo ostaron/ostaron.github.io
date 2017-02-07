@@ -50,21 +50,40 @@ header,
     border-bottom: solid 4px #F7D9C8;
 }
 
-.contact-me:hover, 
+.contact-me:hover,
 .contact-me:focus {
     letter-spacing: 1vw;
 }
 
+.portfolio-item {
+    position: relative;
+}
 
-.portfolio ul {
-    list-style: none;
+.portfolio-item h3 {
     margin: 0;
-    padding: 0;    
+    line-height: 1.5rem;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-bottom: solid 4px #A1D4F2;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .portfolio a {
-    border-bottom: solid 4px #A1D4F2;
-    line-height: 1.5rem;
+}
+
+.portfolio-desc {
+    text-align: right;
+    max-width: 75%;
+    margin-left: auto;
+    overflow: hidden;
+    transition: 1s ease-out;
+    height: 100%;
+}
+
+.hidden {
+    position: relative;
+    top: 100%;
 }
 
 @media only screen and (min-width: 625px) {
