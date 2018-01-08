@@ -62,7 +62,7 @@ header,
     padding: 0;    
 }
 
-.portfolio a {
+a {
     border-bottom: solid 4px #A1D4F2;
     line-height: 1.5rem;
 }
