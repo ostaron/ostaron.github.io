@@ -1,58 +1,102 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
+<script src="{{ "/styles/index.js" | prepend: site.baseurl }}"></script>
+<div>
+  <a id="about-btn" class="waves-effect waves-benjieblue btn-flat btn-large" onclick="show_about();">{{ site.about_btn }}</a>
+  <a id="posts-btn" class="waves-effect waves-benjieblue btn-flat btn-large" onclick="show_posts();">{{ site.posts_btn }}</a>
+  <a id="projects-btn" class="waves-effect waves-benjieblue btn-flat btn-large" onclick="show_projects();">{{ site.projects_btn }}</a>
+</div>
+<div id="about">
 
-<head>
-	<title>Benjie Kibblewhite</title>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
-	<link rel="stylesheet" href="./normalize.css" type="text/css">
-	<link rel="stylesheet" href="./styles.css" type="text/css">
-	<link rel="icon" type="image/png" href="./bkibble-favicon.png" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <h2 class="my-mini-heading">{{ site.about_btn }}</h2>
 
-	<!-- Facebook OG -->
-	<meta property="og:title" content="Benjie Kibblewhite: Web Dev" />
-	<meta property="og:site_name" content="Benjie Kibblewhite" />
-	<meta property="og:url" content="https://ostaron.github.io" />
-	<meta property="og:description" content="Beginner developer, learning, building, and growing." />
-	<meta property="og:image" content="https://ostaron.github.io/bkibble-ogcard.png" />
-	<meta property="og:type" content="website" />
+  <div class="headshot"><a href=mailto:{{site.email}}><img src="./images/headshot.jpg"></a></div>
+  <p>Hey! I'm Benjie. I'm a self-taught wonder, and I am actively seeking a position as a Jr Front-End Developer at a forward-thinking company building modern applications for the web.</p>
+  <p>I'm part of the development team for <a class="my-link" href="https://drag-race-api.readme.io/v1.0/docs" target="_blank" style="color: #F17CC6">No Key No Shade</a>, an API to store and retrieve data about the reality show Ru Paul's Drag Race. We're also building a web app to facilitate Fantasy Leagues for the show, which should be ready just in time for Season 10 in March 2018!</p>
+  <p>The internet has always been a home - I built my first website at 12 years old, when CSS was this neat new thing no one was using yet - but I went to school for Theatre Production (Stage and Production Management). I've spent a few years producing theatre and events, lemme tell ya, there's no better way to learn how to do creative collaboration under extreme pressure, while staying flexible to changing stakeholder demands, and putting out a product that puts the <strike>user</strike> audience first.</p>
+  <div>
+    <a onclick="hide_lists();" class="waves-effect waves-benjieblue btn-flat btn-large">{{ site.close_btn }}</a>
+  </div>
+</div>
+<div id="posts">
+  <h2 class="my-mini-heading">{{ site.posts_btn }}</h2>
 
-	<!-- Twitter Card -->
-	<meta name="twitter:title" content="Benjie Kibblewhite: Web Dev">
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="https://ostaron.github.io">
-	<meta name="twitter:creator" content="@kibben">
-	<meta name="twitter:description" content="Beginner developer, learning, building, and growing.">
-	<meta name="twitter:image" content="https://ostaron.github.io/bkibble-ogcard.png">
-</head>
+  <ul>
+    {% for post in site.posts %}
+    <li>
+      <p class="my-item">
+        <a href="{{ post.url | prepend: site.baseurl }}" class="my-link">{{ post.title }}</a><br>
+        <span class="my-item-sub">{{ post.date | date: "%b %-d, %Y" }}</span><br>
+          {{ post.content | strip_html | truncatewords: 20 }}
+      </p>
+    </li>
+    {% endfor %}
+    <li>
+      <p class="my-item">
+        <a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="my-link">RSS</a> / <a href="{{ "/atom.xml" | prepend: site.baseurl }}" class="my-link">ATOM</a><br>
+        <i class="fa fa-rss" aria-hidden="true"></i> {{ site.rss_badge }}
+    </li>
+  </ul>
 
-<body>
-	<div class="container">
-		<header>
-			<h1>/// Benjie Kibblewhite</h1>
-		</header>
-		<section class="bio">
-			<p>I'm Benjie. I'm a Front-End Web Developer. I'm good friends with JavaScript, jQuery, HTML, CSS, React and (coming soon) Node.js.</p>
-			<p>I'm part of the development team for <a href="https://drag-race-api.readme.io/docs">No Key No Shade</a>, an API to store and retrieve data about the reality show <em>Ru Paul's Drag Race</em>.</p>
-			<p>I am actively seeking a position as Jr Developer at a forward-thinking company building modern applications for the web. </p>
-			<p>The internet has always been a home - I built my first website at 12 years old - but I went to school for Theatre Production (Stage and Production Management), not Computer Science. Ask me about how Theatre is the best place to learn about collaboration,
-				empathy, and UX.</p>
-			<p><a href="mailto:kibben@gmail.com" class="contact-me"><span>contact me</span></a></p>
+  <div>
+    <a onclick="hide_lists();" class="waves-effect waves-benjieblue btn-flat btn-large">{{ site.close_btn }}</a>
+  </div>
+</div>
 
-		</section>
-		<nav class="portfolio">
-			<h2>Things I've Made \\\</h2>
-			<ul>
-				<li><a href="https://lcbo-app-react.herokuapp.com/" target="new">LCBO Search App 2.0 - React Rebuild</a></li>
-				<li><a href="https://ostaron.github.io/lcboapp/" target="new">LCBO Search App 1.0 - The jQuery Journey</a></li>
-				<li><a href="https://ostaron.github.io/conquered/" target="new">Conquered, template from .psd</a></li>
-				<li><a href="https://codepen.io/kibben/pen/KNVEQp" target="new">Wild Geese - animated poem</a></li>
-				<li><a href="https://github.com/ostaron" target="new">GitHub Profile</a></li>
-				<li><a href="https://codepen.io/kibben/" target="new">Codepen</a></li>
 
-			</ul>
-		</nav>
-	</div>
-</body>
+<div id="projects">
+  <h2 class="my-mini-heading">{{ site.projects_btn }}</h2>
+  <ul>
+    {% for project in site.data.projects %}
+    <li>
+      <p class="my-item"><a href="{{ project.link }}" class="my-link">{{ project.name }}</a><br>
+        {{ project.description }}
+      </p>
+      {% if project.repo %}
+      <p class="my-item-sub"><a class="my-link" href="{{project.repo}}" target="_blank">See the code on GitHub</a></p>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  <div>
+    <a onclick="hide_lists();" class="waves-effect waves-benjieblue btn-flat btn-large">{{ site.close_btn }}</a>
+  </div>
+</div>
 
-</html>
+<noscript>
+  <div id="posts-noscript">
+
+    <h2 class="my-mini-heading">{{ site.posts_btn }}</h2>
+
+    <ul>
+      {% for post in site.posts %}
+      <li>
+        <p class="my-item">
+          <a href="{{ post.url | prepend: site.baseurl }}" class="my-link">{{ post.title }}</a><br>
+          <span class="my-item-sub">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </p>
+      </li>
+      {% endfor %}
+      <li>
+        <p class="my-item">
+          <a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="my-link">RSS</a> / <a href="{{ "/atom.xml" | prepend: site.baseurl }}" class="my-link">ATOM</a><br>
+          <span class="my-item-sub"><i class="fa fa-rss" aria-hidden="true"></i> {{ site.rss_badge }}</span>
+      </li>
+    </ul>
+  </div>
+  <div id="projects-noscript">
+    <h2 class="my-mini-heading">{{ site.projects_btn }}</h2>
+    <ul>
+      {% for project in site.data.projects %}
+      <li>
+        <p class="my-item"><a href="{{ project.link }}" class="my-link">{{ project.name }}</a><br>
+          <span class="my-item-sub">
+        {{ project.description }}
+      </span>
+        </p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</noscript>

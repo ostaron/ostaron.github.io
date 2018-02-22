@@ -1,0 +1,28 @@
+- name: Boozehound
+  link: "https://boozehound-lcbo.herokuapp.com/"
+  description: "Boozehound helps you find Liquor Board of Ontario stores close to you that have your favourite products in stock. Made in React, with some layout help from <a class='my-link' href='https://bulma.io/' target='_blank'>Bulma</a>"
+  repo: "https://github.com/ostaron/lcbo-app-react"
+- name: OneKind Future of Grocery Kiosk
+  link: '#'
+  description: ""
+- name: IC/ Insider
+  link: "#"
+  description: "A WordPress based intranet I built while the Office Manager at <a href='www.ideacouture.com' target='_blank' class='my-link'>Idea Couture</a>. We needed a simple tool for our Toronto office. We used a page builder theme, but found we needed a lot of custom functionality that wasn't possible with the page builder. <br /><br />I re-built the theme from the ground up, relying on Advanced Custom Fields to make an easy interface for my colleagues to add and edit pages. We also expanded the site into a multi-site network and deployed it to a total of four of our global offices. <br /><br />In my spare time at the front desk, with support from the development team, I was responsible for all code, styling, and administration of the site."
+- name: LCBO Search App
+  link: "https://benjie.ca/lcboapp/"
+  description: "Version 1.0 of Boozehound. A Single Page App built in jQuery before I knew what an SPA was."
+  repo: "https://github.com/ostaron/lcboapp"
+- name: Fusion Travel 
+  link: "https://benjie.ca/fusion-travel/"
+  description: "Website layout practice, with layout help from Bootstrap. Turned the <a class='my-link' href='https://freebiesbug.com/psd-freebies/fusion-website-template-travel-agencies/' target='_blank'>Fusion Travel Template</a> by <a class='my-link' href='https://dribbble.com/uiuxparag' target='_blank'>Ishtiaq Khan Parag</a> into a functioning website."
+  repo: "https://github.com/ostaron/fusion-travel"
+- name: Conquered
+  link: "https://benjie.ca/conquered/"
+  description: "I took a static .psd file and converted it into a responsive landing page for practice."
+  repo: "https://github.com/ostaron/conquered"
+- name: GitHub 
+  link: "https://github.com/ostaron"
+  description: "See all my repos and contributions."
+- name: Codepen Profile
+  link: "https://codepen.io/kibben/"
+  description: "Check out my doodles, sketches, and practice projects."

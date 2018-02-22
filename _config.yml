@@ -1,0 +1,59 @@
+title: "Benjie K"
+description: "Portfolio & Blog for Benjie Kibblewhite: Web Developer"
+about: "Benjie is a Front-End Web Developer. He's good friends with JavaScript, jQuery, HTML, CSS, React, Vue, and WordPress."
+location: "Toronto, Canada"
+email: kibben@gmail.com
+baseurl: "/material-theme"
+
+url: "https://benjie.ca" # replace by your site's url
+twitter_username: kibben
+github_username:  ostaron
+linkedin_username: benjie-k
+author: "Benjie Kibblewhite"
+
+# google analytics tracking code, please change the value
+g_analytics: ""
+
+# add your disqus to enable comments
+disqus_shortname:
+
+# add your disqus to enable comments
+disqus_shortname:
+
+# language settings
+isolang: en
+close_btn: "Close"
+home_btn: "Home"
+projects_btn: "Projects"
+posts_btn: "Posts"
+about_btn: "About"
+imprint_btn: "Imprint"
+name_badge: "an article by"
+rss_badge: "Subscribe feed!"
+
+# build settings
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    tab_width: 4
+
+# third party gems
+gems:
+
+whitelist:
+
+# exclude files
+exclude:
+  - LICENSE
+  - README.md
