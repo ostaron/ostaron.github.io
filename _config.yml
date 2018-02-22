@@ -28,8 +28,8 @@ projects_btn: "Projects"
 posts_btn: "Posts"
 about_btn: "About"
 imprint_btn: "Imprint"
-name_badge: "an article by"
-rss_badge: "Subscribe feed!"
+name_badge: "by"
+rss_badge: "Subscribe to the feed!"
 
 # build settings
 markdown: kramdown
