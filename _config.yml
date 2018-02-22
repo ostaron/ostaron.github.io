@@ -3,7 +3,7 @@ description: "Portfolio & Blog for Benjie Kibblewhite: Web Developer"
 about: "Benjie is a Front-End Web Developer. He's good friends with JavaScript, jQuery, HTML, CSS, React, Vue, and WordPress."
 location: "Toronto, Canada"
 email: kibben@gmail.com
-baseurl: "/material-theme"
+baseurl: ""
 
 url: "https://benjie.ca" # replace by your site's url
 twitter_username: kibben
