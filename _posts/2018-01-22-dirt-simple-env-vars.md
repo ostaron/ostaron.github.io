@@ -3,11 +3,12 @@ layout: post
 title:  "Dirt-simple Environment Variables with create-react-app and GitHub Pages"
 date:   2018-01-22 00:00:00 +0200
 categories:
+- blog
+tags: 
 - react
 - node
 - express
 - gh-pages
-
 author: "Benjie Kibblewhite"
 ---
 

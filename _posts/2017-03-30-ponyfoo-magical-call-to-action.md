@@ -2,11 +2,12 @@
 title: Ponyfoo’s Magical Newsletter Call To Action Made Me Weep For Joy
 date: 2017-03-30 02:06:00 Z
 categories:
+- blog
+tags:
 - wonder
 - ux
 - ui
 - marketing
-
 layout: post
 author: "Benjie Kibblewhite"
 ---

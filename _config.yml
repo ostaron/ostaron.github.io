@@ -11,6 +11,13 @@ github_username:  ostaron
 linkedin_username: benjie-k
 author: "Benjie Kibblewhite"
 
+
+defaults:
+  - scope:
+      path: "images"
+    values:
+      image: true
+
 # google analytics tracking code, please change the value
 g_analytics: ""
 
@@ -57,3 +64,4 @@ whitelist:
 exclude:
   - LICENSE
   - README.md
+  - .c9
