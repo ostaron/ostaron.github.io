@@ -19,7 +19,7 @@ defaults:
       image: true
 
 # google analytics tracking code, please change the value
-g_analytics: ""
+g_analytics: "UA-114608619-1"
 
 # add your disqus to enable comments
 disqus_shortname:
