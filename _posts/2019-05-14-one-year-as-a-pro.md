@@ -1,6 +1,7 @@
 ---
-title: One Year As A Pro: Lessons From a Self-Taught Developer
-date: Tue May 14 2019 11:56:32 GMT-0400
+layout: post
+title:  "One Year As A Pro: Lessons From a Self-Taught Developer"
+date:   2019-05-14 12:00pm
 categories:
 - blog
 tags:
@@ -8,7 +9,7 @@ tags:
 - journal
 - lessons
 - tips
-layout: post
+
 author: "Benjie Kibblewhite"
 ---
 
