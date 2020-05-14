@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Gif Experiment For Cluster</title>
+    <meta name="description" content="The HTML5 Herald" />
+    <meta name="author" content="SitePoint" />
+
+    <script src="https://unpkg.com/freezeframe/dist/freezeframe.min.js"></script>
+    <style>
+      body {
+        background: #000000;
+      }
+      .container {
+        display: flex;
+        max-width: 1100px;
+        height: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+      }
+      .container > * {
+        flex: 0 0 100px;
+      }
+      img {
+        width: 100px;
+        height: 100px;
+        filter: opacity(0.7);
+        transition: all 1s ease-out;
+      }
+
+      img:hover {
+        filter: opacity(1);
+      }
+
+      .hidden img {
+        display: none;
+      }
+
+      .loading {
+        display: none;
+        color: white;
+        text-align: center;
+        flex: 1 0 100%;
+      }
+
+      .hidden .loading {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container freezeframe">
+      <p class="loading">Loading...</p>
+      <a
+        href="./quilt-squares/1-allen copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/1-allen copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-1.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/1-Eliot copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/1-Eliot copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-2.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/1-Gordon copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/1-Gordon copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-3.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/1-Heidi copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/1-Heidi copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-4.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/1-LauraLoewen copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/1-LauraLoewen copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-5.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/1-Luke copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/1-Luke copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-6.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/2-aaron copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/2-aaron copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-7.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/2-Ellen copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/2-Ellen copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-8.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/2-Freya copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/2-Freya copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-9.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/2-giorgio copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/2-giorgio copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-10.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/2-KristaMartynes copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/2-KristaMartynes copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-11.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/2-Marc copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/2-Marc copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-12.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/2-matthewricketts copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/2-matthewricketts copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-13.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/3-Sasha copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/3-Sasha copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-14.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/4-Claire copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/4-Claire copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-15.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/4-JamesO copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/4-JamesO copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-16.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/4-JuliaStyles- copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/4-JuliaStyles- copy', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-17.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/4-KellyRuth copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/4-KellyRuth copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-18.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/4-Lori copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/4-Lori copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-19.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/4-SarahAlbu copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/4-SarahAlbu copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-20.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/4-TSAworks copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/4-TSAworks copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-21.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/5-Gil copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/5-Gil copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-22.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/5-Kaie copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/5-Kaie copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-23.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/5-Mira copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/5-Mira copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-24.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/5-Xenia copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/5-Xenia copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-25.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/6-Architek copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/6-Architek copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-26.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/6-EliotBritton copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/6-EliotBritton copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-27.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/6-Fjola copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/6-Fjola copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-28.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/6-GabDharmoo copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/6-GabDharmoo copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-29.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/6-Kerey copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/6-Kerey copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-30.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/7-Heidi2 copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/7-Heidi2 copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-31.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/7-jaymez copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/7-jaymez copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-32.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/7-ReikoYamada copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/7-ReikoYamada copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-33.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/7-SarahJo copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/7-SarahJo copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-34.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/7-Schoen copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/7-Schoen copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-35.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/7-VickyChow copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/7-VickyChow copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-36.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/8-AlingeringDarkness copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/8-AlingeringDarkness copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-37.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/8-Everett copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/8-Everett copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-38.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/8-FreyaCPA copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/8-FreyaCPA copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-39.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/8-LauraBowler copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/8-LauraBowler copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-40.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/8-Luke copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/8-Luke copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-41.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/8-SCMira copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/8-SCMira copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-42.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/8-Walshe copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/8-Walshe copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-43.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/9-Maks copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/9-Maks copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-44.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/9-MatthewRobinNye copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/9-MatthewRobinNye copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-45.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/9-Polycoro copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/9-Polycoro copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-46.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/9-SethWoods copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/9-SethWoods copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-47.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/X-Charlotte copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/X-Charlotte copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-48.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/X-ErinGee copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/X-ErinGee copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-49.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/X-Foxconn copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/X-Foxconn copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-50.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/X-Kristen copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/X-Kristen copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-51.gif" alt=""
+      /></a>
+      <a
+        href="./quilt-squares/X-LauraCocks copy.jpg"
+        target="popup"
+        onclick="window.open('./quilt-squares/X-LauraCocks copy.jpg', 'popup', 'width=1000,height=1000'); return;"
+        ><img class="cluster-gif" src="./gifs/cluster-gif-52.gif" alt=""
+      /></a>
+    </div>
+    <script>
+      function waitForImages(element, callback) {
+        var allImgsLength = 0;
+        var allImgsLoaded = 0;
+        var allImgs = [];
+
+        var filtered = Array.prototype.filter.call(
+          element.querySelectorAll("img"),
+          function (item) {
+            if (item.src === "") {
+              return false;
+            }
+
+            // Firefox's `complete` property will always be `true` even if the image has not been downloaded.
+            // Doing it this way works in Firefox.
+            var img = new Image();
+            img.src = item.src;
+            return !img.complete;
+          }
+        );
+
+        filtered.forEach(function (item) {
+          allImgs.push({
+            src: item.src,
+            element: item,
+          });
+        });
+
+        allImgsLength = allImgs.length;
+        allImgsLoaded = 0;
+
+        // If no images found, don't bother.
+        if (allImgsLength === 0) {
+          callback.call(element);
+        }
+
+        allImgs.forEach(function (img) {
+          var image = new Image();
+
+          // Handle the image loading and error with the same callback.
+          image.addEventListener("load", function () {
+            allImgsLoaded++;
+
+            if (allImgsLoaded === allImgsLength) {
+              callback.call(element);
+              return false;
+            }
+          });
+
+          image.src = img.src;
+        });
+      }
+
+      // Function to generate random number for gif start delay
+      function randomNumber(min, max) {
+        return Math.random() * (max - min) + min;
+      }
+
+      const container = document.querySelector(".container");
+      // Javascript enabled, hide all images while loading
+      container.classList.add("hidden");
+
+      waitForImages(container, function () {
+        // images downloaded, show and create FreezeFrame instances
+        const gifs = document.querySelectorAll(".cluster-gif");
+
+        gifs.forEach((gif) => {
+          const me = new Freezeframe(gif, {
+            trigger: false,
+          });
+
+          setTimeout(() => {
+            me.start();
+          }, randomNumber(500, 5000));
+          container.classList.remove("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
