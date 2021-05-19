@@ -113,6 +113,13 @@ a {
     font-family: 'Share Tech Mono', monospace;
 }
 
+code {
+    background: #f0efed;
+    border: 0 solid #f0efed;
+    border-radius: 3px;
+    padding: 0 3px;
+}
+
 .my-link {
     font-size: 18px;
     transition: background 0.1s ease-out;
