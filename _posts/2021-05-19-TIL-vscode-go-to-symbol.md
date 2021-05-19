@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "TIL: VSCode Go To Symbol Shortbut"
+title:  "TIL: VSCode Go To Symbol Shortcut"
 date:   2021-05-19 2:11pm
 categories:
 - blog
