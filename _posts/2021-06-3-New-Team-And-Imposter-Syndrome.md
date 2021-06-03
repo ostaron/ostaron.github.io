@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Lately: New team, less imposter syndrome
-date: 2017-06-03 02:06:00 Z
+title:  Lately -  New team, less imposter syndrome
+date:   2017-06-03 1:51pm
 categories:
 - blog
 tags:
 - lately
 - self-taught developer
-layout: post
+
 author: "Benjie Kibblewhite"
 ---
 
