@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Lately -  New team, less imposter syndrome
-date:   2017-06-03 1:51pm
+date:   2020-06-03 1:51pm
 categories:
 - blog
 tags:
