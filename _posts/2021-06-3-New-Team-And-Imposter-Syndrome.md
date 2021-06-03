@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Lately: New team, less imposter syndrome
 date: 2017-06-03 02:06:00 Z
 categories:
@@ -9,6 +10,7 @@ tags:
 layout: post
 author: "Benjie Kibblewhite"
 ---
+
 I've moved to an new project at work this past week. I've been requesting a change for a while now, and some business needs aligned nicely right around the time I had hoped to make the move. There's a lot that could be said, but one quick thing I wanted to write about was the effect working with new people has had on my imposter syndrome. (Which I think I've been in denial over)
 
 In my [reflection post after one year in the biz]({% post_url 2019-05-14-one-year-as-a-pro %}), I mentioned that I found it important to get used to not knowing what the right choice is. I still stand by that. One can easily waste a lot of time obsessing over getting it exactly right, which is time you could spend actually building something and learning from it. That being said, on my previous team I didn't get a lot of really useful feedback on my code. I was the only front end developer, and our tech lead, while good at his job, didn't have much front end experience himself. I did learn a **lot** by having to figure it all out myself, but I was always scared that someone else would see my code and think it was terrible. (AKA I'm a fraud, AKA imposter syndrome) 
