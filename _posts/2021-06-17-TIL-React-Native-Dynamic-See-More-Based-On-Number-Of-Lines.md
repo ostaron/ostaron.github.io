@@ -1,14 +1,15 @@
 ---
+
 layout: post
-title:  TIL - React Native: Dynamic "See More" based on number of lines of text
-date:   2021-06-17 5:00pm
+title: TIL - React Native Dynamic "See More" based on number of lines of text
+date: 2021-06-17 5:00pm
 categories:
 - blog
 tags:
 - til
-- react-native
-- accessibility
 - a11y
+- accessibility
+- react-native
 
 author: "Benjie Kibblewhite"
 ---
